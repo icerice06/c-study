@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()
+{
+	int i,count, temp1, temp2, total=0 ;
+	char discount;
+	int p_num[11]={0,0,0,0,0,0,0,0,0,0,0};
+	int p_cost[11]={0,2550,2000,3500,2500,2500,2500,2500,550,500,550};
+	
+	
+	
+	
+	
+	
+	printf("구매물품\n");
+	for(i=1; i<=10;i++){
+		if (p_num[i]){
+			switch(i){
+				case 1: printf("샌드위치: %d개\n", p_num[i]) ; break; 
+				case 2: printf("김밥: %d개\n", p_num[i]) ; break;
+				case 3: printf("치킨마요덮밥: %d개\n", p_num[i]) ; break;
+				case 4: printf("햄버거: %d개\n", p_num[i]) ; break;
+				case 5: printf("아이스아메리카노: %d개\n", p_num[i]) ; break; 
+				case 6: printf("카페라떼: %d개\n", p_num[i]) ; break;
+				case 7: printf("카페모카: %d개\n", p_num[i]) ; break;
+				case 8: printf("우유: %d개\n", p_num[i]) ; break;
+				case 9: printf("콜라: %d개\n", p_num[i]) ; break;
+				case 10: printf("아이스티: %d개\n", p_num[i]) ; break;
+			}
+		}
+	}
+	printf("구매금액: 원\n"); 
+	switch(discount){
+				case 'A': printf("경소고 학생할인\n"); break; 
+				case 'B': printf("경소고 교직원할인\n");break; 
+				case 'C': printf("할인대상아님\n");break; 
+				} 
+}
